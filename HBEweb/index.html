@@ -75,16 +75,18 @@
     }
 
     .brand-badge {
-      width: 32px;
-      height: 32px;
-      background: radial-gradient(circle, rgba(245,176,65,1) 0%, rgba(160,102,32,1) 90%);
-      border-radius: .9rem;
-      display: grid;
-      place-items: center;
-      font-size: .65rem;
-      color: #0a0a0a;
-      font-weight: 700;
-      box-shadow: 0 10px 30px rgba(245,176,65,0.35);
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .brand-logo {
+      height: 40px;
+      width: auto;
+      color: var(--text);
+      display: block;
     }
 
     .nav-links {
@@ -362,7 +364,9 @@
   <header>
     <nav class="nav">
       <div class="brand">
-        <div class="brand-badge">HB</div>
+        <div class="brand-badge">
+          <img src="images/honey-badger-logo.png" alt="Honey Badger Engineering" class="brand-logo">
+        </div>
         <div>
           Honey Badger Engineering
         </div>
